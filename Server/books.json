@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "title": "Slaughter-house five", 
+    "author": "Kurt Vonnegut",
+    "review": "Eye-opening",
+    "bookImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmyHC8SLslZwwYTeIJfyU29YHhtNwzN3uFcw&usqp=CAU"
+},
+{
+    "id": 2,
+    "title": "Jim Henson: The Biography",
+    "author": "Brian Jay Jones",
+    "review": "Loved it!",
+    "bookImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIE9Fj8F-aSFrDXbYN0fWE0K-d16ko0AfljEzt3Mppj3wRwEEgL0E&usqp=CAc"
+},
+{
+    "id": 3,
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "review": "Gripping",
+    "bookImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqLvUInF00HhPgajACE09Duj5oJ4pbYmmO-aPSBaF3RC7DIct9QEaLX5ddJLLCIbOPi7Fw_3w&usqp=CAc"
+}]
