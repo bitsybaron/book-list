@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <h1>Books You've Read in 2020</h1> 
-            <p>You're a lovely, well-read starfish in this world with nothing but promise.</p>
+            <h1>Bookly</h1> 
+            <p>Keep track of the books you read. You won't regret it.</p>
         </header> 
     )
 }
