@@ -59,7 +59,7 @@ class Books extends Component {
         return (
             <div>
                 <NewBook books={this.state.books} addBook={this.addBook}/>
-                <div>{booksMap}</div>
+                <div className="grid">{booksMap}</div>
             </div>
         )
     }

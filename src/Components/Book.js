@@ -24,19 +24,21 @@ class Book extends Component {
     render() {
         const {book, deleteBook, reviewEdit} = this.props;
         return(
-            <div>
-                <h3>{book.title}</h3>
-                <p>{book.author}</p>
-                <p>{book.review}</p>
+            <div className="book-card">
+                <img className="book-img" src={book.bookImg}/>
+                <div className="right">
+                    <p>{book.title}</p>
+                    <p>by {book.author}</p>
+                    <p>{book.review}</p>
+                </div>
                 <p>{this.state.reviewInput ? 
                     <div>
-                        <input name="edit" onChange={this.universalHandler}/> 
+                        <input placeholder="Actually, it was..." name="edit" onChange={this.universalHandler}/> 
                         <button onClick={() => {this.reviewEdit()
-                            reviewEdit(book.id, this.state.edit)}}>Save New Review</button>
+                            reviewEdit(book.id, this.state.edit)}}>Update Book Review</button>
                     </div> : null}</p>
-                <img src="https://img.icons8.com/material-sharp/24/000000/pencil--v2.png" onClick={() => this.reviewEdit()}/>
-                <img src={book.bookImg}/>
-                <button onClick={() => deleteBook(book.id)}>Delete</button>
+                <img class="icon" src="https://img.icons8.com/material-sharp/24/000000/pencil--v2.png" onClick={() => this.reviewEdit()}/>
+                <img class="icon" src="https://img.icons8.com/dotty/80/000000/delete-forever.png" onClick={() => deleteBook(book.id)}/>
             </div>
         )
     }

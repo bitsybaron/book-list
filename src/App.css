@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100vw;
     color: rgb(97, 94, 94);
-    font-family: 'Dancing Script', cursive;
+    
 }
 
 header {
@@ -10,4 +10,49 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
+
+header > p {
+    font-size: 20px;
+}
+
+.book-card {
+    background-color: red;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    
+}
+
+.book-img {
+    width: 130px;
+}
+
+.right > p {
+    margin-left: 15px;
+
+}
+
+.icon {
+    height: 30px;
+}
+
+.grid {
+    width: 1000px;
+    background-color: blue;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+

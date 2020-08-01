@@ -19,14 +19,17 @@ class NewBook extends Component {
     }
     
     render() {
-        const {title, author, review, bookImg} = this.state
+        const {title, author, review, bookImg} = this.state;
         return(
         <div>
-            <input name="title" onChange={this.universalHandler} />
-            <input name="author" onChange={this.universalHandler}/>
-            <input name="review" onChange={this.universalHandler}/>
-            <input name="bookImg" onChange={this.universalHandler}/>
-            <button onClick={(e) => this.props.addBook(e, title, author, review, bookImg)}> Add Book </button>
+            <input value={title} name="title" onChange={this.universalHandler} />
+            <input value={author} name="author" onChange={this.universalHandler}/>
+            <input value={review} name="review" onChange={this.universalHandler}/>
+            <input value={bookImg} name="bookImg" onChange={this.universalHandler}/>
+            <button onClick={(e) => {this.props.addBook(e, title, author, review, bookImg); this.setState({title: '',
+            author: '',
+            review: '',
+            bookImg: ''})}} > Add Book </button>
         </div>
         )
     }
