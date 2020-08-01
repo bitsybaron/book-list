@@ -58,7 +58,7 @@ class Books extends Component {
         console.log(booksMap)
         return (
             <div>
-                <NewBook books={this.state.books} addBook={this.addBook}/>
+                <NewBook className="add-books" books={this.state.books} addBook={this.addBook}/>
                 <div className="grid">{booksMap}</div>
             </div>
         )
