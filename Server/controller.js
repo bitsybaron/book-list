@@ -17,8 +17,8 @@ module.exports = {
     },
     addBook: (req, res) => {
         const {title, author, bookImg, review} = req.body;
-        if (title === '' || author === '' || bookImg === '' || review === '') {
-            res.status(401).send("uh, oh babe")
+        if (title == '' || author == '' || bookImg == '' || review == '')  {
+            res.status(401).send("You must fill in all the forms.")
         } else {
             const newBook = {
                 id,
