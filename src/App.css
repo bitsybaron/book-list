@@ -73,8 +73,15 @@ header > p {
     top: 60px;
     left: 20px;
     margin-right: 20px;
+    box-shadow: 1px 1px gray;
 }
 
+.icon1:hover, .icon2:hover {
+    background-color: #ff99cc;
+}
+.icon1:active, .icon2:active {
+    background-color: pink;
+}
 .toggle {
     position: absolute;
     margin-top: 10px;
@@ -82,7 +89,9 @@ header > p {
 }
 
 .update-btn {
-    margin-left: 7px;
+    margin-left: 28px;
+    background-color: #ff99cc;
+    padding: 2px;
 }
 
 

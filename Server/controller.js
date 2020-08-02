@@ -17,17 +17,20 @@ module.exports = {
     },
     addBook: (req, res) => {
         const {title, author, bookImg, review} = req.body;
-        const newBook = {
-            id,
-            title,
-            author, 
-            review,
-            bookImg
-        }
-        books.push(newBook);
-        id++;
-        res.status(200).send(books)
-    },
+        if (title === '' || author === '' || bookImg === '' || review === '') {
+            res.status(401).send("uh, oh babe")
+        } else {
+            const newBook = {
+                id,
+                title,
+                author, 
+                review,
+                bookImg
+            }
+            books.push(newBook);
+            id++;
+            res.status(200).send(books)
+    }},
     reviewEdit: (req, res) => {
         const {id} = req.params;
         const index = books.findIndex(book => book.id === +id);

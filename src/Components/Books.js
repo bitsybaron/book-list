@@ -30,7 +30,9 @@ class Books extends Component {
         e.preventDefault()
         axios.post('/api/books', {title, author, review, bookImg})
             .then(res => this.setState({books: res.data}))
-            .catch(err => console.log(err));
+            .catch(err => {
+                alert('Uh oh, babe! Please fill out the forms completely.')
+                console.log(err)});
     }
 
     deleteBook = (id) => {
