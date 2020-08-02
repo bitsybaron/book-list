@@ -35,7 +35,6 @@ class Book extends Component {
                 <p>{this.state.reviewInput ? 
                     <div className="toggle">
                         <input placeholder="Actually, it was..." name="edit" onChange={this.universalHandler}/> 
-                        <br/>
                         <button className="update-btn" onClick={() => {this.reviewEdit()
                             reviewEdit(book.id, this.state.edit)}}>Update Review</button>
                     </div> : null}</p>
