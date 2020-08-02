@@ -22,14 +22,14 @@ class NewBook extends Component {
         const {title, author, review, bookImg} = this.state;
         return(
         <div className="new-book">
-            <input value={title} name="title" onChange={this.universalHandler} />
-            <input value={author} name="author" onChange={this.universalHandler}/>
-            <input value={review} name="review" onChange={this.universalHandler}/>
-            <input value={bookImg} name="bookImg" onChange={this.universalHandler}/>
+            <input placeholder="title" value={title} name="title" onChange={this.universalHandler} />
+            <input placeholder="author" value={author} name="author" onChange={this.universalHandler}/>
+            <input placeholder="review" value={review} name="review" onChange={this.universalHandler}/>
+            <input placeholder="book image url" value={bookImg} name="bookImg" onChange={this.universalHandler}/>
             <button className="add-btn" onClick={(e) => {this.props.addBook(e, title, author, review, bookImg); this.setState({title: '',
             author: '',
             review: '',
-            bookImg: ''})}} > Add </button>
+            bookImg: ''})}} > Add</button>
         </div>
         )
     }

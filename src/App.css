@@ -65,7 +65,7 @@ header > p {
 }
 
 .icon1, .icon2 {
-    height: 30px;
+    height: 25px;
     background-color: pink;
     border-radius: 10%;
     padding: 3px;
@@ -123,4 +123,8 @@ button {
 .update-btn {
     padding: 1px;
     font-size: 13px;
+}
+
+::placeholder {
+    font-family: 'Open Sans', sans-serif;
 }
