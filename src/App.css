@@ -11,7 +11,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left, #ff3399 0%, #ff99cc 100%);
+    background: linear-gradient(to left, #ff3399 0%, #ff99cc 90%);
     height: 90px;
     color: white;
     
@@ -121,25 +121,31 @@ header > p {
     margin: 25px auto;
 }
 
-.add-btn {
-    background-color: pink;
+.add-btn, .update-btn{
+    background-color: white;
     border-color: white;
     border-radius: 15%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
     padding: 5px;
-    color: rgb(87, 87, 87)
+    color: #ff3399;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 
-.update-btn {
-  height: 50px;
-  width: 60px;
-  border-radius: 10%;
-  border-color: white;
-  box-shadow: 1px 1px gray;
-  color: rgb(87, 87, 87);
-}
+
 
 ::placeholder {
     font-family: 'Open Sans', sans-serif;
 }
+footer {
+    margin-top: 70px;
+    height: 50px;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1591563678622-4d4bc47f99d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+
 

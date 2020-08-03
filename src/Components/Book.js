@@ -24,7 +24,7 @@ class Book extends Component {
     render() {
         const {book, deleteBook, reviewEdit} = this.props;
         return(
-            <div className="book-card">
+            <main className="book-card">
                 <img className="book-img" src={book.bookImg}/>
                 <div className="right">
                     <p className="title">{book.title}</p>
@@ -36,14 +36,14 @@ class Book extends Component {
                     <div className="toggle">
                         <input placeholder="Actually, it was..." name="edit" onChange={this.universalHandler}/> 
                         <button className="update-btn" onClick={() => {this.reviewEdit()
-                            reviewEdit(book.id, this.state.edit)}}>Update Review</button>
+                            reviewEdit(book.id, this.state.edit)}}>Update</button>
                     </div> : null}</p>
                 <div className="icon-wrapper">
                     <img className="icon1" src="https://img.icons8.com/material-sharp/24/000000/pencil--v2.png" onClick={() => this.reviewEdit()}/>
                     <img className="icon2" src="https://img.icons8.com/dotty/80/000000/delete-forever.png" onClick={() => deleteBook(book.id)}/>
                 </div>
                 </div>
-            </div>
+            </main>
         )
     }
 }

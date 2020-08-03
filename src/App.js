@@ -3,6 +3,7 @@ import Books from './Components/Books';
 import './Reset.css'
 import './App.css';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <div>
       <Header />
       <Books />
+      <Footer />
     </div>
   )
 }
